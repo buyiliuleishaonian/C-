@@ -26,12 +26,29 @@ namespace WindowsFormsApp1
             }
         }
         private string _labText;
+        [Browsable(true)]
+        [Category("自定义")]
+        [Description("基于label控件的text")]
         public string LabText
         {
             get { return _labText; }
             set { _labText = value;
             this.label1.Text=value;}
         }
+
+
+        //prop   一次tab可以快速生成一个属性
+        public int MyProperty { get; set; }
+
+        //propfull 两次tab可以快速生成一个属性和对应的字段
+        private int myVar;
+
+        public int MyVar
+        {
+            get { return myVar; }
+            set { myVar = value; }
+        }
+
 
 
         //添加事件，1、需要在类的内部声明事件
