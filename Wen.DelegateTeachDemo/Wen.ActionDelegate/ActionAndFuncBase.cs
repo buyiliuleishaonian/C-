@@ -24,7 +24,7 @@ namespace Wen.ActionDelegate
         /// </summary>
         public void Test2()
         {
-            //表示不需要参数的委托
+            //表示不需要参数的委托,int只表示返回值类型
             Func<int> func1 = () => { return 10; };
 
             //这里int表示一个参数，最后一个数据类型表示为需要返回的参数类型

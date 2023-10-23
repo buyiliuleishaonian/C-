@@ -21,6 +21,9 @@ namespace Wen.TaskAdanceDemo
         //取消任务信号源
         private CancellationTokenSource cts=new CancellationTokenSource();
 
+        //手动停止事件对象
+        private  ManualResetEvent mResetEvent=new ManualResetEvent(true);
+
         /// <summary>
         /// 启动
         /// </summary>
@@ -34,9 +37,14 @@ namespace Wen.TaskAdanceDemo
                 cts=new CancellationTokenSource();
             }
             Task task = new Task(() => {
+               
                 int nums = 0;
                 while (!cts.IsCancellationRequested)
                 {
+                    
+                    //用来控制是否需要暂停和继续
+                    mResetEvent.WaitOne();
+                    //实际开发中，可以在这个地方写入循环执行的代码
                     nums++;
                     Thread.Sleep(1000);
                     Console.WriteLine(nums);
@@ -62,7 +70,8 @@ namespace Wen.TaskAdanceDemo
         /// <param name="e"></param>
         private void btn_TaskReSet_Click(object sender, EventArgs e)
         {
-
+            //暂停
+            mResetEvent.Reset();
         }
 
         /// <summary>
@@ -72,7 +81,8 @@ namespace Wen.TaskAdanceDemo
         /// <param name="e"></param>
         private void btn_TaskContinue_Click(object sender, EventArgs e)
         {
-
+            //继续
+            mResetEvent.Set();
         }
     }
 }

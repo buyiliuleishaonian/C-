@@ -37,6 +37,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8、Task启动，暂停，�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wen.TaskAdanceDemo", "Wen.TaskAdanceDemo\Wen.TaskAdanceDemo.csproj", "{9F4DD10B-1B80-4C17-A5C4-25A0E59E6A1B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9、解决跨线程访问和耗时任务的解决", "9、解决跨线程访问和耗时任务的解决", "{8BFD476A-FB59-4D72-BC34-2F9857B3BB1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wen.TaskCrossVisit", "Wen.TaskCrossVisit\Wen.TaskCrossVisit.csproj", "{B97DABE4-1C7E-4565-B9E7-CA14D3DFD5EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10、线程锁", "10、线程锁", "{AB9CA267-161B-47FE-83CA-B4CAA55AB537}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wen.TaskLock", "Wen.TaskLock\Wen.TaskLock.csproj", "{1A2A74EE-0288-4F27-B3CF-9F2E0F7ACFEA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "12、扩展方法", "12、扩展方法", "{ECA31D7D-AE68-4EF3-AC9C-2F6BF250588E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wen.ExtendMathod", "Wen.ExtendMathod\Wen.ExtendMathod.csproj", "{5C991131-B4C8-464C-9251-B24F7D5261A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +91,18 @@ Global
 		{9F4DD10B-1B80-4C17-A5C4-25A0E59E6A1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F4DD10B-1B80-4C17-A5C4-25A0E59E6A1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F4DD10B-1B80-4C17-A5C4-25A0E59E6A1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B97DABE4-1C7E-4565-B9E7-CA14D3DFD5EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B97DABE4-1C7E-4565-B9E7-CA14D3DFD5EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B97DABE4-1C7E-4565-B9E7-CA14D3DFD5EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B97DABE4-1C7E-4565-B9E7-CA14D3DFD5EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A2A74EE-0288-4F27-B3CF-9F2E0F7ACFEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A2A74EE-0288-4F27-B3CF-9F2E0F7ACFEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A2A74EE-0288-4F27-B3CF-9F2E0F7ACFEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A2A74EE-0288-4F27-B3CF-9F2E0F7ACFEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C991131-B4C8-464C-9251-B24F7D5261A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C991131-B4C8-464C-9251-B24F7D5261A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C991131-B4C8-464C-9251-B24F7D5261A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C991131-B4C8-464C-9251-B24F7D5261A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,6 +117,9 @@ Global
 		{72D0CDC5-B5AA-48E7-A137-268C2550248D} = {769B443A-5C95-44F4-BD3E-C59E2AB5ECF3}
 		{3403F1EE-A0BA-4386-A706-7C44E88D769E} = {769B443A-5C95-44F4-BD3E-C59E2AB5ECF3}
 		{9F4DD10B-1B80-4C17-A5C4-25A0E59E6A1B} = {270CEA8E-A5FB-41C4-955E-198F4D864427}
+		{B97DABE4-1C7E-4565-B9E7-CA14D3DFD5EA} = {8BFD476A-FB59-4D72-BC34-2F9857B3BB1A}
+		{1A2A74EE-0288-4F27-B3CF-9F2E0F7ACFEA} = {AB9CA267-161B-47FE-83CA-B4CAA55AB537}
+		{5C991131-B4C8-464C-9251-B24F7D5261A8} = {ECA31D7D-AE68-4EF3-AC9C-2F6BF250588E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0F2291AC-BC44-41CF-9067-7B2C46CC51AE}
